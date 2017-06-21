@@ -119,8 +119,4 @@ app.all('*', function(req, res, next) {
 不知不觉写了这么多，老铁们凑合这看吧😁。
 MagicMusic还在不断努力的改进，觉得还行的可以点个star，**你的star是我继续开源创作的动力**，谢谢！！！
 
-
-### 广告
-
-2018届毕业生求职ing
-简历👉：[黄敬仁个人简历](http://hzzly.net/resume/)
+ 
