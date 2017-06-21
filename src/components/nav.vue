@@ -3,7 +3,7 @@
         <div class="nav-item">
             <router-link to="popular">
                 <div class="icon"><i class="icon">&#xe62f;</i></div>
-                <span>流行</span>
+                <span>推荐</span>
             </router-link>
         </div>
         <div class="nav-item">

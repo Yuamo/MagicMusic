@@ -29,6 +29,8 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
+    // 用户生产打包压缩用  UglifyJsPlugin
+    // http://www.css88.com/doc/webpack2/guides/production-build/
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false

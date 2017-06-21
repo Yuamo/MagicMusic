@@ -21,21 +21,25 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      // 别名
+      vue$: "vue/dist/vue.esm.js",
+      "@": resolve("src")
     }
   },
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loader: "vue-loader",
         options: vueLoaderConfig
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        exclude: /(node_modules|bower_components)/,     // 编译时去除exclude 的目录
+        include: [resolve('src'), resolve('test')],
+        // use: ["source-map-loader"],
+        // enforce: "pre"
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
