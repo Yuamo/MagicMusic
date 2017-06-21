@@ -1,26 +1,18 @@
 <template>
     <ul class="banner">
-        <li v-for="(item,index) in image"
-            :class="[move[index]]">
-            <v-touch class="vuetouch"
-                     v-on:swipeleft="nextPic"
-                     v-on:swiperight="prePic">
+        <li v-for="(item,index) in image" :class="[move[index]]">
+            <v-touch class="vuetouch" v-on:swipeleft="nextPic" v-on:swiperight="prePic">
                 <template v-if="typeof item === 'object'">
-                    <img v-lazy="item.src"
-                         @click="target(index)">
-                    <span :class="{tag:item.tagName}"
-                          :style="item.tagStyle">{{item.tagName}}</span>
+                    <img v-lazy="item.src" @click="target(index)">
+                    <span :class="{tag:item.tagName}" :style="item.tagStyle">{{item.tagName}}</span>
                 </template>
                 <template v-if="typeof item === 'string'">
-                    <img :src="item"
-                         @click="target(index)">
+                    <img :src="item" @click="target(index)">
                 </template>
             </v-touch>
         </li>
         <li class="button">
-            <em v-for="(item,index) in image"
-                @click="target(index)"
-                :class="[move[index]]"></em>
+            <em v-for="(item,index) in image" @click="target(index)" :class="[move[index]]"></em>
         </li>
     </ul>
 </template>
@@ -92,8 +84,7 @@ export default {
     perspective: 1000px;
     position: relative;
     width: 100%;
-    height: px2rem(350px);
-    // padding-top: px2rem(10px);
+    height: px2rem(350px); // padding-top: px2rem(10px);
     background: rgba(8, 5, 58, .9);
 }
 

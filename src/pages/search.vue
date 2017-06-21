@@ -134,7 +134,7 @@ export default {
         height: px2rem(100px);
         line-height: px2rem(100px);
         text-align: center;
-        background: #28224e;
+        background: #28224e ;
         display: flex;
         justify-content: space-between; // box-shadow: 0 10px 20px rgba(0, 0, 0, .8);
         border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -166,7 +166,7 @@ export default {
         flex: 1;
         overflow: auto;
         overflow-x: hidden;
-        background: #28224e;
+        background: #28224e ;
         .hot-key {
             color: rgba(255, 255, 255, .7);
             padding: px2rem(20px);

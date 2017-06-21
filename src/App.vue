@@ -15,6 +15,9 @@
 		<transition name="fold">
 			<v-play v-show="showPlay"></v-play>
 		</transition>
+		<transition name="fold">
+			<v-play v-show="showPlay"></v-play>
+		</transition>
 	</div>
 </template>
 
@@ -69,7 +72,7 @@ export default {
 			'showPlayLoading'
 		]),
 		tansitionName() {
-			switch(this.$route.path) {
+			switch (this.$route.path) {
 				case '/collection':
 					return 'slide-left'
 				default:

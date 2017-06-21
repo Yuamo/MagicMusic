@@ -105,7 +105,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/css/function.scss';
 .music-list {
-    background: #28224e;
+    background: #28224e ;
     position: relative;
     .list-item {
         position: relative;

@@ -45,6 +45,6 @@ export default {
 <style lang="scss" scoped>
 .home {
     height: 100%;
-    background: #28224e;
+    background: #28224e ;
 }
 </style>

@@ -41,7 +41,7 @@ export default {
     height: px2rem(100px);
     line-height: px2rem(100px);
     text-align: center;
-    background: #28224e;
+    background: #28224e ;
     display: flex;
     justify-content: space-between;
     color: #746ca8;
