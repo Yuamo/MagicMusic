@@ -2,13 +2,11 @@
     <div class="user">
         <div class="user-card">
             <div class="avatar">
-                <img src="https://dn-mhke0kuv.qbox.me/51ec2dae1418f9c88443.png?imageView2/1/w/100/h/100/q/85/interlace/1"
-                     alt="">
+                <img src="https://dn-mhke0kuv.qbox.me/51ec2dae1418f9c88443.png?imageView2/1/w/100/h/100/q/85/interlace/1" alt="">
             </div>
-            <div class="name">hzzly</div>
+            <div class="name">高山知流水</div>
             <div class="desc">
-                <p>本人大三狗一枚，就读的是江西一所普通的大学(非985,211)，但这并没有阻挡我对前端的热爱，
-                    自学两年多，做过两个外包项目以及两个个人的开源项目。<span>求实习ing。</span></p>
+                <p>没有花香没有树高，我是一名默默无闻的程序员</p>
             </div>
             <div class="about">
                 <div class="dynamic" @click="dynamics">
@@ -24,11 +22,11 @@
                     <span>喜欢</span>
                 </div>
             </div>
-            <div class="btn">
-                <a href="http://hzzly.net/resume/" target="_blank">
-                    <i class="icon">&#xe63c;</i>关于我
-                </a>
-            </div>
+            <!--<div class="btn">
+                        <a href="http://hzzly.net/resume/" target="_blank">
+                            <i class="icon">&#xe63c;</i>关于我
+                        </a>
+                    </div>-->
         </div>
     </div>
 </template>
@@ -128,7 +126,7 @@ export default {
             display: flex;
             justify-content: center;
             font-size: px2rem(24px);
-            > div {
+            >div {
                 width: px2rem(120px);
                 text-align: center;
                 display: flex;
@@ -166,7 +164,7 @@ export default {
                 transition: all .5s;
             }
             &:hover {
-                box-shadow:0 15px 30px rgba(0,0,0,0.15);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
             }
         }
     }

@@ -1,14 +1,11 @@
 <template>
-	<div class="sidebar"
-	     :class="{showSidebar: showSidebar}">
-		<div class="sidebar-con"
-		     :class="{showbar: showSidebar}">
+	<div class="sidebar" :class="{showSidebar: showSidebar}">
+		<div class="sidebar-con" :class="{showbar: showSidebar}">
 			<div class="head">
 				<div class="avatar">
-					<img src="https://dn-mhke0kuv.qbox.me/51ec2dae1418f9c88443.png?imageView2/1/w/100/h/100/q/85/interlace/1"
-					     alt="">
+					<img src="https://dn-mhke0kuv.qbox.me/51ec2dae1418f9c88443.png?imageView2/1/w/100/h/100/q/85/interlace/1" alt="">
 				</div>
-				<div class="name">hzzly</div>
+				<div class="name">高山知流水</div>
 			</div>
 			<div class="menu">
 				<ul>
@@ -51,9 +48,7 @@
 				</ul>
 			</div>
 		</div>
-		<div v-show="showSidebar"
-		     class="sidebar_mask"
-		     @click="_hidebar"></div>
+		<div v-show="showSidebar" class="sidebar_mask" @click="_hidebar"></div>
 	</div>
 </template>
 
